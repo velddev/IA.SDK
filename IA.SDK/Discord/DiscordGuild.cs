@@ -12,7 +12,7 @@ namespace IA.SDK
             }
         }
 
-        public virtual DiscordChannel GetDefaultChannel()
+        public virtual Task<DiscordChannel> GetDefaultChannel()
         {
             return null;
         }
