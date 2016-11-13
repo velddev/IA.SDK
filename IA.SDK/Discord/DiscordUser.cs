@@ -16,7 +16,6 @@ namespace IA.SDK
                 return 0;
             }
         }
-
         public virtual bool IsBot
         {
             get
@@ -24,7 +23,6 @@ namespace IA.SDK
                 return false;
             }
         }
-
         public virtual string Username
         {
             get
@@ -48,11 +46,7 @@ namespace IA.SDK
             }
         }
 
-        public virtual bool HasPermissions(DiscordChannel channel, params DiscordChannelPermission[] permissions)
-        {
-            throw new NotImplementedException();
-        }
-        public virtual bool HasPermissions(DiscordGuild guild, params DiscordGuildPermission[] permissions)
+        public virtual bool HasPermissions(DiscordChannel channel, params DiscordGuildPermission[] permissions)
         {
             throw new NotImplementedException();
         }
