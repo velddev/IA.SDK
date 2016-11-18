@@ -24,6 +24,12 @@ namespace IA.SDK
             }
         }
 
+        public virtual async Task<IEnumerable<IDiscordUser>> GetUsersAsync()
+        {
+            await Task.CompletedTask;
+            throw new NotImplementedException();
+        }
+
         public virtual async Task SendFileAsync(string file)
         {
             await Task.CompletedTask;
