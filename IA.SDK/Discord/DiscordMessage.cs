@@ -17,10 +17,16 @@ namespace IA.SDK
                 return 0;
             }
         }
-        public virtual DiscordUser Author { get {
+        public virtual IDiscordUser Author { get {
                 return null;
             }
         }
+        public virtual IDiscordUser Bot { get
+            {
+                return null;
+            }
+        }
+
         public virtual DiscordChannel Channel
         {
             get
