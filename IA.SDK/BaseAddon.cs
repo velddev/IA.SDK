@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace IA.SDK
 {
-    public class BaseAddon
+    public class BaseAddon : IAddon
     {
-        protected AddonInstance instance = new AddonInstance();
+        protected AddonInstance addon = new AddonInstance();
 
-        public virtual void Create()
+        public virtual Task Create()
         {
-            instance = new AddonInstance();
+            return Task.CompletedTask;
         }
 
-        public AddonInstance GetModule()
+        public AddonInstance GetAddon()
         {
-            return instance;
+            return addon;
         }
     }
 }

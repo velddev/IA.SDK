@@ -48,6 +48,7 @@
     <Compile Include="Discord\DiscordMessage.cs" />
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
+    <Compile Include="IAddon.cs" />
     <Compile Include="Interfaces\IDiscordEntity.cs" />
     <Compile Include="Interfaces\IDiscordGuild.cs" />
     <Compile Include="Interfaces\IDiscordRole.cs" />

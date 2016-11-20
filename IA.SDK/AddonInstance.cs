@@ -8,6 +8,7 @@ namespace IA.SDK
 {
     public class AddonInstance
     {
+        public string name = "unnamed-addon";
         public List<ModuleInstance> modules;
 
         public AddonInstance()
