@@ -24,6 +24,14 @@ namespace IA.SDK
             }
         }
 
+        public virtual IDiscordGuild Guild
+        {
+            get
+            {
+                return null;
+            }
+        }
+
         public virtual async Task<IEnumerable<IDiscordUser>> GetUsersAsync()
         {
             await Task.CompletedTask;
@@ -42,6 +50,11 @@ namespace IA.SDK
         }
 
         public virtual async Task<DiscordMessage> SendMessage(string message)
+        {
+            await Task.CompletedTask;
+            throw new NotImplementedException();
+        }
+        public virtual async Task<IDiscordMessage> SendMessage(IDiscordEmbedBuilder embed)
         {
             await Task.CompletedTask;
             throw new NotImplementedException();

@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,14 +45,19 @@
     <Compile Include="CommandEvent.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />
     <Compile Include="Discord\DiscordChannelPermission.cs" />
+    <Compile Include="Discord\DiscordEmbed.cs" />
     <Compile Include="Discord\DiscordGuild.cs" />
     <Compile Include="Discord\DiscordMessage.cs" />
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
     <Compile Include="IAddon.cs" />
+    <Compile Include="Interfaces\IDiscordEmbed.cs" />
     <Compile Include="Interfaces\IDiscordEntity.cs" />
     <Compile Include="Interfaces\IDiscordGuild.cs" />
     <Compile Include="Interfaces\IDiscordRole.cs" />
+    <Compile Include="Interfaces\IEmbedAuthor.cs" />
+    <Compile Include="Interfaces\IEmbedField.cs" />
+    <Compile Include="Interfaces\IEmbedFooter.cs" />
     <Compile Include="Interfaces\IMentionable.cs" />
     <Compile Include="Interfaces\IDiscordChannel.cs" />
     <Compile Include="Interfaces\IDiscordUser.cs" />
@@ -59,6 +65,7 @@
     <Compile Include="EventInstance.cs" />
     <Compile Include="EventInformation.cs" />
     <Compile Include="Discord\DiscordGuildPermission.cs" />
+    <Compile Include="Interfaces\IProxy.cs" />
     <Compile Include="ModuleInstance.cs" />
     <Compile Include="ModuleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

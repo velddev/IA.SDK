@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
 {
-    interface IDiscordGuild : IDiscordEntity
+    public interface IDiscordGuild : IDiscordEntity
     {
     
     }
