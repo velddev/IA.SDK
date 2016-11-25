@@ -1,6 +1,7 @@
 ﻿using IA.SDK.Interfaces;
 using System.Threading.Tasks;
 using System;
+using System.Collections.Generic;
 
 namespace IA.SDK
 {
@@ -14,6 +15,22 @@ namespace IA.SDK
             }
         }
 
+        public virtual uint ChannelCount
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public virtual uint UserCount
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual Task<IDiscordUser> GetUserAsync(ulong user_id)
         {
             return null;
@@ -22,6 +39,11 @@ namespace IA.SDK
         public virtual Task<IDiscordChannel> GetDefaultChannel()
         {
             return null;
+        }
+
+        public virtual Task<List<IDiscordChannel>> GetChannels()
+        {
+            throw new NotImplementedException();
         }
     }
 }
