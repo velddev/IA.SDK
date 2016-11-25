@@ -8,6 +8,7 @@ namespace IA.SDK.Interfaces
 {
     public interface IDiscordGuild : IDiscordEntity
     {
-    
+        Task<IDiscordUser> GetUserAsync(ulong user_id);
+        Task<IDiscordChannel> GetDefaultChannel();
     }
 }

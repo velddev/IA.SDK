@@ -1,5 +1,6 @@
 ﻿using IA.SDK.Interfaces;
 using System.Threading.Tasks;
+using System;
 
 namespace IA.SDK
 {
@@ -13,12 +14,12 @@ namespace IA.SDK
             }
         }
 
-        public virtual Task<DiscordUser> GetUserAsync(ulong user_id)
+        public virtual Task<IDiscordUser> GetUserAsync(ulong user_id)
         {
             return null;
         }
 
-        public virtual Task<DiscordChannel> GetDefaultChannel()
+        public virtual Task<IDiscordChannel> GetDefaultChannel()
         {
             return null;
         }

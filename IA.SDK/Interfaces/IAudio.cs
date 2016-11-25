@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
 {
-    interface IAudio
+    public interface IAudio
     {
         Stream AudioBytes { get; set; }
     }

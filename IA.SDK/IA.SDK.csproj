@@ -43,6 +43,7 @@
     <Compile Include="AddonInstance.cs" />
     <Compile Include="BaseAddon.cs" />
     <Compile Include="CommandEvent.cs" />
+    <Compile Include="Discord\DiscordAudioClient.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />
     <Compile Include="Discord\DiscordChannelPermission.cs" />
     <Compile Include="Discord\DiscordEmbed.cs" />
@@ -51,6 +52,8 @@
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
     <Compile Include="IAddon.cs" />
+    <Compile Include="Interfaces\IAudio.cs" />
+    <Compile Include="Interfaces\IDiscordAudioClient.cs" />
     <Compile Include="Interfaces\IDiscordEmbed.cs" />
     <Compile Include="Interfaces\IDiscordEntity.cs" />
     <Compile Include="Interfaces\IDiscordGuild.cs" />
@@ -66,6 +69,7 @@
     <Compile Include="EventInformation.cs" />
     <Compile Include="Discord\DiscordGuildPermission.cs" />
     <Compile Include="Interfaces\IProxy.cs" />
+    <Compile Include="Interfaces\ISong.cs" />
     <Compile Include="ModuleInstance.cs" />
     <Compile Include="ModuleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

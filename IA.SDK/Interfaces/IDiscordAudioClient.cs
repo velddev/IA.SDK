@@ -8,12 +8,16 @@ namespace IA.SDK.Interfaces
 {
     interface IDiscordAudioClient
     {
+        Queue<IAudio> AudioQueue { get; }
+
         bool IsPlaying { get; }
 
         Task Connect();
         Task Disconnect();
 
-        Task Play(IAudio audio);
+        Task Play(IAudio audio, bool skipIfPlaying = false);
         Task Pause();
+
+        Task Skip();
     }
 }
