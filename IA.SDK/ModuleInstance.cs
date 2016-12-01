@@ -4,9 +4,11 @@ using System.Threading.Tasks;
 
 namespace IA.SDK
 {
-    public class ModuleInstance
+    public class ModuleInstance : IModule
     {
         public ModuleData data = new ModuleData();
+
+        public string Name { get; set; }
 
         Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 
