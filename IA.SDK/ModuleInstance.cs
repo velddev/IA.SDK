@@ -30,6 +30,7 @@ namespace IA.SDK
             return Task.CompletedTask;
         }
 
+        // TODO: Finish this
         public string GetState()
         {
             return data.name + ": " + "ACTIVE";
