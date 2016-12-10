@@ -14,10 +14,12 @@ namespace IA.SDK
 
         public ModuleInstance(string name, bool enabled = true)
         {
-            data = new ModuleData();
-            data.name = name;
-            data.enabled = enabled;
-        }       
+            data = new ModuleData()
+            {
+                name = name,
+                enabled = enabled
+            };
+        }
         public ModuleInstance(Action<ModuleData> info)
         {
             info.Invoke(data);
