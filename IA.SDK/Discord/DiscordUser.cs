@@ -46,6 +46,14 @@ namespace IA.SDK
             }
         }
 
+        public virtual IDiscordGuild Guild
+        {
+            get
+            {
+                return null;
+            }
+        }
+
         public virtual bool HasPermissions(DiscordChannel channel, params DiscordGuildPermission[] permissions)
         {
             throw new NotImplementedException();

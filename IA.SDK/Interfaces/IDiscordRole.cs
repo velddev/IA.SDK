@@ -9,5 +9,7 @@ namespace IA.SDK.Interfaces
     interface IDiscordRole
     {
         int Position { get; }
+
+        string Mention { get; }
     }
 }

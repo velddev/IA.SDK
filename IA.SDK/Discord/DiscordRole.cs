@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace IA.SDK
 {
-    class DiscordRole : IDiscordEntity, IDiscordRole
+    public class DiscordRole : IDiscordEntity, IDiscordRole
     {
-        public ulong Id
+        public virtual ulong Id
         {
             get
             {
@@ -17,11 +17,19 @@ namespace IA.SDK
             }
         }
 
-        public int Position
+        public virtual int Position
         {
             get
             {
                 return 0;
+            }
+        }
+
+        public virtual string Mention
+        {
+            get
+            {
+                return "";
             }
         }
     }

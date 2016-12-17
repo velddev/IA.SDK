@@ -15,6 +15,14 @@ namespace IA.SDK
             }
         }
 
+        public virtual string Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual uint ChannelCount
         {
             get
@@ -28,6 +36,14 @@ namespace IA.SDK
             get
             {
                 throw new NotImplementedException();
+            }
+        }
+
+        public virtual IDiscordUser Owner
+        {
+            get
+            {
+                return null;
             }
         }
 

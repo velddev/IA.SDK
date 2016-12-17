@@ -9,6 +9,8 @@ namespace IA.SDK.Interfaces
         string Username { get; }
         string Discriminator { get; }
 
+        IDiscordGuild Guild { get; }
+
         bool HasPermissions(DiscordChannel channel, params DiscordGuildPermission[] permissions);
 
         Task Ban(DiscordGuild guild);
