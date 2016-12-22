@@ -7,6 +7,14 @@ namespace IA.SDK
 {
     public class DiscordGuild : IDiscordGuild
     {
+        public virtual string AvatarUrl
+        {
+            get
+            {
+                return "";
+            }
+        }
+
         public virtual ulong Id
         {
             get

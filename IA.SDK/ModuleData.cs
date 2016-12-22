@@ -11,8 +11,8 @@ namespace IA.SDK
 
     public class ModuleData
     {
-        public string name;
-        public bool enabled;
+        public string name = "$no-name";
+        public bool enabled = true;
 
         public List<CommandEvent> events = new List<CommandEvent>();
 

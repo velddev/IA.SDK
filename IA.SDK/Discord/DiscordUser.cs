@@ -9,6 +9,13 @@ namespace IA.SDK
 {
     public class DiscordUser : IDiscordUser, IMentionable
     {
+        public virtual string AvatarUrl
+        {
+            get
+            {
+                return "";
+            }
+        }
         public virtual ulong Id
         {
             get
@@ -54,7 +61,7 @@ namespace IA.SDK
             }
         }
 
-        public virtual bool HasPermissions(DiscordChannel channel, params DiscordGuildPermission[] permissions)
+        public virtual bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions)
         {
             throw new NotImplementedException();
         }

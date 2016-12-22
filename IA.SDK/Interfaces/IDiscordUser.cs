@@ -4,6 +4,8 @@ namespace IA.SDK.Interfaces
 {
     public interface IDiscordUser : IDiscordEntity, IMentionable
     {
+        string AvatarUrl { get; }
+
         bool IsBot { get; }
 
         string Username { get; }
@@ -11,7 +13,7 @@ namespace IA.SDK.Interfaces
 
         IDiscordGuild Guild { get; }
 
-        bool HasPermissions(DiscordChannel channel, params DiscordGuildPermission[] permissions);
+        bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions);
 
         Task Ban(DiscordGuild guild);
         Task Kick();

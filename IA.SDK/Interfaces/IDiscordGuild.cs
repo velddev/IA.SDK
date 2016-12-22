@@ -8,6 +8,7 @@ namespace IA.SDK.Interfaces
 {
     public interface IDiscordGuild : IDiscordEntity
     {
+        string AvatarUrl { get; }
         string Name { get; }
 
         uint ChannelCount { get; }

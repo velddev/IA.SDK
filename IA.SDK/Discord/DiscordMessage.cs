@@ -27,14 +27,14 @@ namespace IA.SDK
             }
         }
 
-        public virtual DiscordChannel Channel
+        public virtual IDiscordChannel Channel
         {
             get
             {
                 return null;
             }
         }
-        public virtual DiscordGuild Guild
+        public virtual IDiscordGuild Guild
         {
             get
             {

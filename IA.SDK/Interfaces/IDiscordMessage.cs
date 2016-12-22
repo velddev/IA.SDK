@@ -12,8 +12,8 @@ namespace IA.SDK.Interfaces
         IDiscordUser Author { get; }
         IDiscordUser Bot { get; }
 
-        DiscordChannel Channel { get; }
-        DiscordGuild Guild { get; }
+        IDiscordChannel Channel { get; }
+        IDiscordGuild Guild { get; }
 
         string Content { get; }
         DateTimeOffset Timestamp { get; }
