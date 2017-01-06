@@ -32,5 +32,13 @@ namespace IA.SDK
                 return "";
             }
         }
+
+        public string Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

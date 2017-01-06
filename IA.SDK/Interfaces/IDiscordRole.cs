@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
 {
-    interface IDiscordRole
+    public interface IDiscordRole
     {
+        ulong Id { get; }
+
         int Position { get; }
 
         string Mention { get; }
+        string Name { get; }
     }
 }

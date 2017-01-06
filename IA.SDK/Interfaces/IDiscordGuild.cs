@@ -16,9 +16,12 @@ namespace IA.SDK.Interfaces
 
         IDiscordUser Owner { get; }
 
+        List<IDiscordRole> Roles { get; }
+
         Task<IDiscordUser> GetUserAsync(ulong user_id);
 
         Task<List<IDiscordChannel>> GetChannels();
         Task<IDiscordChannel> GetDefaultChannel();
+        Task<IDiscordRole> GetRole(ulong role_id);
     }
 }

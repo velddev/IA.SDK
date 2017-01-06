@@ -66,7 +66,12 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public virtual Task Ban(DiscordGuild guild)
+        public virtual Task AddRoleAsync(IDiscordRole role)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual Task Ban(IDiscordGuild guild)
         {
             throw new NotImplementedException();
         }
@@ -76,14 +81,18 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public virtual Task RemoveRoleAsync(IDiscordRole role)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual async Task SendFile(string path)
         {
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
-        public virtual async Task<DiscordMessage> SendMessage(string message)
+        public virtual async Task<IDiscordMessage> SendMessage(string text)
         {
-            await Task.CompletedTask;
             throw new NotImplementedException();
         }
     }

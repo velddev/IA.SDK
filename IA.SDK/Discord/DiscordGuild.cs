@@ -55,6 +55,14 @@ namespace IA.SDK
             }
         }
 
+        public virtual List<IDiscordRole> Roles
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual Task<IDiscordUser> GetUserAsync(ulong user_id)
         {
             return null;
@@ -66,6 +74,11 @@ namespace IA.SDK
         }
 
         public virtual Task<List<IDiscordChannel>> GetChannels()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual Task<IDiscordRole> GetRole(ulong role_id)
         {
             throw new NotImplementedException();
         }
