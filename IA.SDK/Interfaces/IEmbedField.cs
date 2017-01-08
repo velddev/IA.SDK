@@ -2,9 +2,9 @@
 {
     public interface IEmbedField
     {
-        string Name { get; set; }
-        string Value { get; set; }
+        string Name { get; }
+        string Value { get; }
 
-        bool IsInline { get; set; }
+        bool IsInline { get; }
     }
 }
