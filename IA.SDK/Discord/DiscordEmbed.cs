@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace IA.SDK
 {
-    class DiscordEmbed : IDiscordEmbedBuilder
+    public class DiscordEmbed : IDiscordEmbedBuilder
     {
         public IEmbedAuthor Author
         {
