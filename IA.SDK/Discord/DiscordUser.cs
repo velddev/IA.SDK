@@ -107,7 +107,7 @@ namespace IA.SDK
         {
             throw new NotImplementedException();
         }
-        public virtual Task<IDiscordMessage> SendMessage(IDiscordEmbedBuilder embed)
+        public virtual Task<IDiscordMessage> SendMessage(IDiscordEmbed embed)
         {
             throw new NotImplementedException();
         }

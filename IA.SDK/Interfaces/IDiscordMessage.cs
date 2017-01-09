@@ -25,5 +25,7 @@ namespace IA.SDK.Interfaces
         Task ModifyAsync(string message);
         Task PinAsync();
         Task UnpinAsync();
+
+        IDiscordEmbed CreateEmbed();
     }
 }

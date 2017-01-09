@@ -14,6 +14,6 @@ namespace IA.SDK.Interfaces
         Task SendFileAsync(MemoryStream stream, string extension);
 
         Task<DiscordMessage> SendMessage(string message);
-        Task<IDiscordMessage> SendMessage(IDiscordEmbedBuilder embed);
+        Task<IDiscordMessage> SendMessage(IDiscordEmbed embed);
     }
 }

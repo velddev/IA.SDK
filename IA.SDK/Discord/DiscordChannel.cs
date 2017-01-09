@@ -47,7 +47,7 @@ namespace IA.SDK
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
-        public virtual async Task<IDiscordMessage> SendMessage(IDiscordEmbedBuilder embed)
+        public virtual async Task<IDiscordMessage> SendMessage(IDiscordEmbed embed)
         {
             await Task.CompletedTask;
             throw new NotImplementedException();

@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace IA.SDK
 {
-    public class DiscordEmbed : IDiscordEmbedBuilder
+    public class DiscordEmbed : IDiscordEmbed
     {
         public IEmbedAuthor Author
         {
@@ -62,6 +62,19 @@ namespace IA.SDK
             }
         }
 
+        public string ImageUrl
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public string Title
         {
             get
@@ -88,7 +101,7 @@ namespace IA.SDK
             }
         }
 
-        public IDiscordEmbedBuilder AddField(Action<IEmbedField> field)
+        public IDiscordEmbed AddField(Action<IEmbedField> field)
         {
             throw new NotImplementedException();
         }

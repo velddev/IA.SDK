@@ -97,5 +97,10 @@ namespace IA.SDK
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
+        public virtual IDiscordEmbed CreateEmbed()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
