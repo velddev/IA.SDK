@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,8 @@ namespace IA.SDK.Interfaces
         ulong Id { get; }
 
         int Position { get; }
+
+        Color Color { get; }
 
         string Mention { get; }
         string Name { get; }

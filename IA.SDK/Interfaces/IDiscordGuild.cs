@@ -22,6 +22,7 @@ namespace IA.SDK.Interfaces
 
         Task<List<IDiscordChannel>> GetChannels();
         Task<IDiscordChannel> GetDefaultChannel();
-        Task<IDiscordRole> GetRole(ulong role_id);
+
+        IDiscordRole GetRole(ulong role_id);
     }
 }

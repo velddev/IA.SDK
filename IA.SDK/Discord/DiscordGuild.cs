@@ -11,7 +11,15 @@ namespace IA.SDK
         {
             get
             {
-                return "";
+                throw new NotImplementedException();
+            }
+        }
+
+        public virtual uint ChannelCount
+        {
+            get
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -19,7 +27,7 @@ namespace IA.SDK
         {
             get
             {
-                return 0;
+                throw new NotImplementedException();
             }
         }
 
@@ -31,7 +39,7 @@ namespace IA.SDK
             }
         }
 
-        public virtual uint ChannelCount
+        public virtual IDiscordUser Owner
         {
             get
             {
@@ -47,14 +55,6 @@ namespace IA.SDK
             }
         }
 
-        public virtual IDiscordUser Owner
-        {
-            get
-            {
-                return null;
-            }
-        }
-
         public virtual List<IDiscordRole> Roles
         {
             get
@@ -65,12 +65,12 @@ namespace IA.SDK
 
         public virtual Task<IDiscordUser> GetUserAsync(ulong user_id)
         {
-            return null;
+            throw new NotImplementedException();
         }
 
         public virtual Task<IDiscordChannel> GetDefaultChannel()
         {
-            return null;
+            throw new NotImplementedException();
         }
 
         public virtual Task<List<IDiscordChannel>> GetChannels()
@@ -78,7 +78,7 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public virtual Task<IDiscordRole> GetRole(ulong role_id)
+        public virtual IDiscordRole GetRole(ulong role_id)
         {
             throw new NotImplementedException();
         }

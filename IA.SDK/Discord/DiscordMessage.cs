@@ -17,11 +17,16 @@ namespace IA.SDK
                 return 0;
             }
         }
-        public virtual IDiscordUser Author { get {
+        public virtual IDiscordUser Author
+        {
+            get
+            {
                 return null;
             }
         }
-        public virtual IDiscordUser Bot { get
+        public virtual IDiscordUser Bot
+        {
+            get
             {
                 return null;
             }
@@ -42,19 +47,24 @@ namespace IA.SDK
             }
         }
 
-        public virtual string Content { get
+        public virtual string Content
+        {
+            get
             {
                 return "";
             }
         }
-        public virtual DateTimeOffset Timestamp {
+        public virtual DateTimeOffset Timestamp
+        {
             get
             {
                 return new DateTime(0);
             }
         }
 
-        public virtual IReadOnlyCollection<ulong> MentionedUserIds { get
+        public virtual IReadOnlyCollection<ulong> MentionedUserIds
+        {
+            get
             {
                 return null;
             }

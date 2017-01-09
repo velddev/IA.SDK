@@ -1,6 +1,7 @@
 ﻿using IA.SDK.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,19 +10,19 @@ namespace IA.SDK
 {
     public class DiscordRole : IDiscordEntity, IDiscordRole
     {
+        public virtual Color Color
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual ulong Id
         {
             get
             {
-                return 0;
-            }
-        }
-
-        public virtual int Position
-        {
-            get
-            {
-                return 0;
+                throw new NotImplementedException();
             }
         }
 
@@ -29,11 +30,19 @@ namespace IA.SDK
         {
             get
             {
-                return "";
+                throw new NotImplementedException();
             }
         }
 
-        public string Name
+        public virtual string Name
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public virtual int Position
         {
             get
             {

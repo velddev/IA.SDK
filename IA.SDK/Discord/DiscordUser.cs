@@ -16,40 +16,12 @@ namespace IA.SDK
                 return "";
             }
         }
-        public virtual ulong Id
-        {
-            get
-            {
-                return 0;
-            }
-        }
-        public virtual bool IsBot
-        {
-            get
-            {
-                return false;
-            }
-        }
-        public virtual string Username
-        {
-            get
-            {
-                return "";
-            }
-        }
+
         public virtual string Discriminator
         {
             get
             {
                 return "";
-            }
-        }
-
-        public virtual string Mention
-        {
-            get
-            {
-                return "<@!" + Id + ">";
             }
         }
 
@@ -61,9 +33,44 @@ namespace IA.SDK
             }
         }
 
-        public virtual bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions)
+        public virtual ulong Id
         {
-            throw new NotImplementedException();
+            get
+            {
+                return 0;
+            }
+        }
+
+        public virtual bool IsBot
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        public virtual string Mention
+        {
+            get
+            {
+                return "<@!" + Id + ">";
+            }
+        }
+
+        public virtual List<ulong> RoleIds
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public virtual string Username
+        {
+            get
+            {
+                return "";
+            }
         }
 
         public virtual Task AddRoleAsync(IDiscordRole role)
@@ -72,6 +79,11 @@ namespace IA.SDK
         }
 
         public virtual Task Ban(IDiscordGuild guild)
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions)
         {
             throw new NotImplementedException();
         }
@@ -86,12 +98,16 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public virtual async Task SendFile(string path)
+        public virtual Task SendFile(string path)
         {
-            await Task.CompletedTask;
             throw new NotImplementedException();
         }
-        public virtual async Task<IDiscordMessage> SendMessage(string text)
+
+        public virtual Task<IDiscordMessage> SendMessage(string text)
+        {
+            throw new NotImplementedException();
+        }
+        public virtual Task<IDiscordMessage> SendMessage(IDiscordEmbedBuilder embed)
         {
             throw new NotImplementedException();
         }

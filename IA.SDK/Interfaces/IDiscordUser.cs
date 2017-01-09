@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
 {
@@ -8,16 +9,20 @@ namespace IA.SDK.Interfaces
 
         bool IsBot { get; }
 
-        string Username { get; }
         string Discriminator { get; }
 
         IDiscordGuild Guild { get; }
+
+        List<ulong> RoleIds { get; }
+
+        string Username { get; }
 
         bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions);
 
         Task AddRoleAsync(IDiscordRole role);
 
         Task Ban(IDiscordGuild guild);
+
         Task Kick();
 
         Task RemoveRoleAsync(IDiscordRole role);
