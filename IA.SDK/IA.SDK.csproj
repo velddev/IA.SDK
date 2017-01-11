@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AddonInstance.cs" />
     <Compile Include="BaseAddon.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="CommandEvent.cs" />
     <Compile Include="Discord\DiscordAudioClient.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />

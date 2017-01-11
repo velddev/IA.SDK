@@ -20,14 +20,18 @@ namespace IA.SDK.Interfaces
         bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions);
 
         Task AddRoleAsync(IDiscordRole role);
+        Task AddRolesAsync(List<IDiscordRole> roles);
 
         Task Ban(IDiscordGuild guild);
 
         Task Kick();
 
         Task RemoveRoleAsync(IDiscordRole role);
+        Task RemoveRolesAsync(List<IDiscordRole> roles);
+ 
+        Task SendFile(string path);
 
         Task<IDiscordMessage> SendMessage(string text);
-        Task SendFile(string path);
+        Task<IDiscordMessage> SendMessage(IDiscordEmbed embed);
     }
 }

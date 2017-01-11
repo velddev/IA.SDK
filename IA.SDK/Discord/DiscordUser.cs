@@ -78,6 +78,11 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public Task AddRolesAsync(List<IDiscordRole> roles)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual Task Ban(IDiscordGuild guild)
         {
             throw new NotImplementedException();
@@ -94,6 +99,11 @@ namespace IA.SDK
         }
 
         public virtual Task RemoveRoleAsync(IDiscordRole role)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task RemoveRolesAsync(List<IDiscordRole> roles)
         {
             throw new NotImplementedException();
         }

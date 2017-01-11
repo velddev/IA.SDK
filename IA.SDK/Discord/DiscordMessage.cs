@@ -77,6 +77,14 @@ namespace IA.SDK
             }
         }
 
+        public int ShardId
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual async Task DeleteAsync()
         {
             await Task.CompletedTask;
