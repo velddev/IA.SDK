@@ -85,6 +85,22 @@ namespace IA.SDK
             }
         }
 
+        IDiscordMessageChannel IDiscordMessage.Channel
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public IDiscordAudioChannel VoiceChannel
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual async Task DeleteAsync()
         {
             await Task.CompletedTask;

@@ -14,7 +14,9 @@ namespace IA.SDK.Interfaces
 
         int ShardId { get; }
 
-        IDiscordChannel Channel { get; }
+        IDiscordMessageChannel Channel { get; }
+        IDiscordAudioChannel VoiceChannel { get; }
+
         IDiscordGuild Guild { get; }
 
         string Content { get; }
