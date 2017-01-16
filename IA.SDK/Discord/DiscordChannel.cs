@@ -50,7 +50,7 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public virtual async Task<DiscordMessage> SendMessage(string message)
+        public virtual async Task<IDiscordMessage> SendMessage(string message)
         {
             await Task.CompletedTask;
             throw new NotImplementedException();

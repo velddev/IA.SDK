@@ -85,6 +85,14 @@ namespace IA.SDK
             }
         }
 
+        public IDiscordClient Discord
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual async Task DeleteAsync()
         {
             await Task.CompletedTask;

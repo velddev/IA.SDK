@@ -12,7 +12,7 @@ namespace IA.SDK.Interfaces
         IDiscordUser Author { get; }
         IDiscordUser Bot { get; }
 
-        int ShardId { get; }
+        IDiscordClient Discord { get; }
 
         IDiscordChannel Channel { get; }
         IDiscordGuild Guild { get; }

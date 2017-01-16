@@ -53,6 +53,7 @@
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
     <Compile Include="IAddon.cs" />
+    <Compile Include="Interfaces\IDiscordClient.cs" />
     <Compile Include="Interfaces\IModule.cs" />
     <Compile Include="Interfaces\IAudio.cs" />
     <Compile Include="Interfaces\IDiscordAudioClient.cs" />
