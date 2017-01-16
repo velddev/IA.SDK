@@ -11,6 +11,8 @@ namespace IA.SDK.Interfaces
 
         string Discriminator { get; }
 
+        IDiscordAudioChannel VoiceChannel { get; }
+
         IDiscordGuild Guild { get; }
 
         List<ulong> RoleIds { get; }

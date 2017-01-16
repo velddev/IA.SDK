@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
 {
-    interface IDiscordAudioClient
+    public interface IDiscordAudioClient
     {
         Queue<IAudio> AudioQueue { get; }
 

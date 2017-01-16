@@ -68,17 +68,17 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public virtual Task<IDiscordChannel> GetDefaultChannel()
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual Task<List<IDiscordChannel>> GetChannels()
-        {
-            throw new NotImplementedException();
-        }
-
         public virtual IDiscordRole GetRole(ulong role_id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<List<IDiscordMessageChannel>> IDiscordGuild.GetChannels()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IDiscordMessageChannel> IDiscordGuild.GetDefaultChannel()
         {
             throw new NotImplementedException();
         }

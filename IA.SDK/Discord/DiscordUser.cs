@@ -73,6 +73,14 @@ namespace IA.SDK
             }
         }
 
+        public IDiscordAudioChannel VoiceChannel
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual Task AddRoleAsync(IDiscordRole role)
         {
             throw new NotImplementedException();

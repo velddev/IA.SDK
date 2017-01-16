@@ -20,8 +20,8 @@ namespace IA.SDK.Interfaces
 
         Task<IDiscordUser> GetUserAsync(ulong user_id);
 
-        Task<List<IDiscordChannel>> GetChannels();
-        Task<IDiscordChannel> GetDefaultChannel();
+        Task<List<IDiscordMessageChannel>> GetChannels();
+        Task<IDiscordMessageChannel> GetDefaultChannel();
 
         IDiscordRole GetRole(ulong role_id);
     }

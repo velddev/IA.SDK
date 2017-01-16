@@ -85,7 +85,19 @@ namespace IA.SDK
             }
         }
 
+<<<<<<< HEAD
         public IDiscordClient Discord
+=======
+        IDiscordMessageChannel IDiscordMessage.Channel
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public IDiscordAudioChannel VoiceChannel
+>>>>>>> 09af6848c130440ed3f367a93deed4821e87e497
         {
             get
             {
