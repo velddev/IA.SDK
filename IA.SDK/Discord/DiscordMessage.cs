@@ -32,13 +32,6 @@ namespace IA.SDK
             }
         }
 
-        public virtual IDiscordChannel Channel
-        {
-            get
-            {
-                return null;
-            }
-        }
         public virtual IDiscordGuild Guild
         {
             get
@@ -85,10 +78,23 @@ namespace IA.SDK
             }
         }
 
-<<<<<<< HEAD
         public IDiscordClient Discord
-=======
-        IDiscordMessageChannel IDiscordMessage.Channel
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        IDiscordMessageChannel Channel
+        {
+            get
+            {
+                return null;
+            }
+        }
+
+        public IDiscordAudioChannel VoiceChannel
         {
             get
             {
@@ -96,8 +102,7 @@ namespace IA.SDK
             }
         }
 
-        public IDiscordAudioChannel VoiceChannel
->>>>>>> 09af6848c130440ed3f367a93deed4821e87e497
+        IDiscordMessageChannel IDiscordMessage.Channel
         {
             get
             {

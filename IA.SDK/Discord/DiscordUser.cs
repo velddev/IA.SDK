@@ -57,6 +57,14 @@ namespace IA.SDK
             }
         }
 
+        public string Nickname
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual List<ulong> RoleIds
         {
             get
@@ -126,6 +134,11 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
         public virtual Task<IDiscordMessage> SendMessage(IDiscordEmbed embed)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SetNickname(string text)
         {
             throw new NotImplementedException();
         }

@@ -18,6 +18,7 @@ namespace IA.SDK.Interfaces
         List<ulong> RoleIds { get; }
 
         string Username { get; }
+        string Nickname { get; }
 
         bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions);
 
@@ -35,5 +36,7 @@ namespace IA.SDK.Interfaces
 
         Task<IDiscordMessage> SendMessage(string text);
         Task<IDiscordMessage> SendMessage(IDiscordEmbed embed);
+
+        Task SetNickname(string text);
     }
 }
