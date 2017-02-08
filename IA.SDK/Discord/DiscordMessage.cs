@@ -1,9 +1,6 @@
-﻿using IA.SDK;
-using IA.SDK.Interfaces;
+﻿using IA.SDK.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IA.SDK
@@ -17,6 +14,7 @@ namespace IA.SDK
                 return 0;
             }
         }
+
         public virtual IDiscordUser Author
         {
             get
@@ -24,6 +22,7 @@ namespace IA.SDK
                 return null;
             }
         }
+
         public virtual IDiscordUser Bot
         {
             get
@@ -47,6 +46,7 @@ namespace IA.SDK
                 return "";
             }
         }
+
         public virtual DateTimeOffset Timestamp
         {
             get
@@ -62,6 +62,7 @@ namespace IA.SDK
                 return null;
             }
         }
+
         public virtual IReadOnlyCollection<ulong> MentionedRoleIds
         {
             get
@@ -86,7 +87,7 @@ namespace IA.SDK
             }
         }
 
-        IDiscordMessageChannel Channel
+        private IDiscordMessageChannel Channel
         {
             get
             {
@@ -115,16 +116,19 @@ namespace IA.SDK
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
         public virtual async Task ModifyAsync(string message)
         {
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
         public virtual async Task PinAsync()
         {
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
         public virtual async Task UnpinAsync()
         {
             await Task.CompletedTask;

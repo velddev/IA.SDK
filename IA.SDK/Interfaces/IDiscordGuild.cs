@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
@@ -21,6 +18,7 @@ namespace IA.SDK.Interfaces
         Task<IDiscordUser> GetUserAsync(ulong user_id);
 
         Task<List<IDiscordMessageChannel>> GetChannels();
+
         Task<IDiscordMessageChannel> GetDefaultChannel();
 
         IDiscordRole GetRole(ulong role_id);

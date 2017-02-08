@@ -18,6 +18,8 @@ namespace IA.SDK
     }
 
     public delegate Task ProcessServerCommand(IDiscordGuild e);
+
     public delegate Task ProcessCommand(IDiscordMessage e, string args);
+
     public delegate bool CheckCommand(IDiscordMessage e, string command, string[] allAliases);
 }

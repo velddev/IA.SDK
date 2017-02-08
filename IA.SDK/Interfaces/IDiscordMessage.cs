@@ -1,8 +1,5 @@
-﻿using IA.SDK.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
@@ -26,8 +23,11 @@ namespace IA.SDK.Interfaces
         IReadOnlyCollection<ulong> MentionedRoleIds { get; }
 
         Task DeleteAsync();
+
         Task ModifyAsync(string message);
+
         Task PinAsync();
+
         Task UnpinAsync();
 
         IDiscordEmbed CreateEmbed();

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace IA.SDK
@@ -44,6 +43,7 @@ namespace IA.SDK
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
         public virtual async Task SendFileAsync(MemoryStream stream, string extension)
         {
             await Task.CompletedTask;
@@ -55,6 +55,7 @@ namespace IA.SDK
             await Task.CompletedTask;
             throw new NotImplementedException();
         }
+
         public virtual async Task<IDiscordMessage> SendMessage(IDiscordEmbed embed)
         {
             await Task.CompletedTask;

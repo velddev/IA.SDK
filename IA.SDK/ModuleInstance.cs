@@ -10,7 +10,7 @@ namespace IA.SDK
 
         public string Name { get; set; }
 
-        Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
+        private Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 
         public ModuleInstance(string name, bool enabled = true)
         {
@@ -20,6 +20,7 @@ namespace IA.SDK
                 enabled = enabled
             };
         }
+
         public ModuleInstance(Action<ModuleData> info)
         {
             info.Invoke(data);

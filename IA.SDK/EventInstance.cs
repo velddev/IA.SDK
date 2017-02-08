@@ -19,8 +19,8 @@ namespace IA.SDK
 
         public EventInstance()
         {
-
         }
+
         public EventInstance(Action<EventInstance> info)
         {
             info.Invoke(this);
@@ -36,8 +36,8 @@ namespace IA.SDK
 
         public EventMetadata()
         {
-
         }
+
         public EventMetadata(string description, string error, params string[] usage)
         {
             this.description = description;

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
@@ -13,9 +10,11 @@ namespace IA.SDK.Interfaces
         bool IsPlaying { get; }
 
         Task Connect();
+
         Task Disconnect();
 
         Task Play(IAudio audio, bool skipIfPlaying = false);
+
         Task Pause();
 
         Task Skip();

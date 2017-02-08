@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IA.SDK
 {
@@ -16,7 +12,8 @@ namespace IA.SDK
 
         public ProcessCommand processCommand = null;
 
-        public CommandEvent(Action<CommandEvent> info) { 
+        public CommandEvent(Action<CommandEvent> info)
+        {
             info.Invoke(this);
         }
     }
