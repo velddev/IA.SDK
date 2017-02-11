@@ -23,7 +23,7 @@ namespace IA.SDK
             }
         }
 
-        public virtual Task Connect()
+        public virtual Task Connect(IDiscordAudioChannel channel)
         {
             throw new NotImplementedException();
         }
@@ -39,6 +39,11 @@ namespace IA.SDK
         }
 
         public virtual Task Play(IAudio audio, bool skipIfPlaying = false)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task PlayFile(string file)
         {
             throw new NotImplementedException();
         }

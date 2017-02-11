@@ -9,11 +9,13 @@ namespace IA.SDK.Interfaces
 
         bool IsPlaying { get; }
 
-        Task Connect();
+        Task Connect(IDiscordAudioChannel channel);
 
         Task Disconnect();
 
         Task Play(IAudio audio, bool skipIfPlaying = false);
+
+        Task PlayFile(string file);
 
         Task Pause();
 
