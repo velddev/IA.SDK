@@ -100,5 +100,10 @@ namespace IA.SDK
         {
             throw new NotImplementedException();
         }
+
+        public void CreateFooter()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

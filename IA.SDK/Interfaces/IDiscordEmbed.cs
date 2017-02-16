@@ -19,5 +19,7 @@ namespace IA.SDK.Interfaces
         string Url { get; set; }
 
         IDiscordEmbed AddField(Action<IEmbedField> field);
+
+        void CreateFooter();
     }
 }
