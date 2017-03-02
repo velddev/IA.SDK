@@ -6,14 +6,16 @@ namespace IA.SDK
     {
         protected AddonInstance addon = new AddonInstance();
 
-        public virtual Task Create()
+        public virtual Task<AddonInstance> Create(AddonInstance i)
         {
-            return Task.CompletedTask;
+            return null;
         }
 
         public AddonInstance GetAddon()
         {
             return addon;
         }
+
+
     }
 }

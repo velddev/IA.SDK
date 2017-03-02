@@ -44,6 +44,7 @@
     <Compile Include="BaseAddon.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="CommandEvent.cs" />
+    <Compile Include="Database\SqlQueryResponse.cs" />
     <Compile Include="Discord\DiscordAudioClient.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />
     <Compile Include="Discord\DiscordChannelPermission.cs" />
@@ -52,7 +53,9 @@
     <Compile Include="Discord\DiscordMessage.cs" />
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
+    <Compile Include="Exceptions\AddonRunException.cs" />
     <Compile Include="IAddon.cs" />
+    <Compile Include="IAddonInstance.cs" />
     <Compile Include="Interfaces\IDiscordClient.cs" />
     <Compile Include="Interfaces\IDiscordAudioChannel.cs" />
     <Compile Include="Interfaces\IDiscordMessageChannel.cs" />

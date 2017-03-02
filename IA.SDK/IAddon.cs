@@ -4,7 +4,7 @@ namespace IA.SDK
 {
     public interface IAddon
     {
-        Task Create();
+        Task<AddonInstance> Create(AddonInstance instance);
 
         AddonInstance GetAddon();
     }
