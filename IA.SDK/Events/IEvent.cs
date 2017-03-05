@@ -8,10 +8,22 @@ namespace IA.SDK.Events
 {
     public interface IEvent
     {
-        string Name { get; }
-        string[] Aliases { get; }
+        string Name { get; set; }
+        string[] Aliases { get; set; }
 
-        string Description { get; }
-        string[] Usage { get; }
+        EventAccessibility Accessibility { get; set; }
+        EventMetadata Metadata { get; set; }
+
+        bool OverridableByDefaultPrefix { get; set; }
+        bool CanBeDisabled { get; set; }
+        bool DefaultEnabled { get; set; }
+
+        IModule Module { get; set; }
+
+        int TimesUsed { get; set; }
+
+        Task<bool> IsEnabled(ulong id);
+
+        Task SetEnabled(ulong id, bool value);
     }
 }

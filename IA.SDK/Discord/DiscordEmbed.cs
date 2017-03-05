@@ -101,6 +101,11 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public IEmbedAuthor CreateAuthor()
+        {
+            throw new NotImplementedException();
+        }
+
         public void CreateFooter()
         {
             throw new NotImplementedException();

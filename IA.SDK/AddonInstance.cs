@@ -1,32 +1,70 @@
-﻿using System;
+﻿using IA.SDK.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using IA.SDK.Interfaces;
+using IA.SDK.Events;
 
 namespace IA.SDK
 {
     public class AddonInstance : IAddonInstance
     {
-        public string name = "unnamed-addon";
-        public List<ModuleInstance> modules;
+        public string Name { get; set; }
+        public List<IModule> Modules { get; set; }
 
         public AddonInstance()
         {
-            modules = new List<ModuleInstance>();
+            Modules = new List<IModule>();
         }
 
-        public void AddCommandEventTo(ModuleInstance selectedModule, Action<CommandEvent> command)
+        public void CreateModule(Action<IModule> x)
         {
-            selectedModule.AddCommand(command);
-        }
-
-        public void CreateModule(Action<ModuleData> x)
-        {
-            modules.Add(new ModuleInstance(x));
+            Modules.Add(new ModuleInstance(x));
         }
 
         public virtual async Task QueryAsync(string text, QueryOutput output, params object[] parameters)
         {
-            throw new Exception("Addon cannot run on it's own");
+            throw new AddonRunException();
+        }
+
+        public virtual ICommandEvent GetCommandEvent(string args)
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual Task<string> ListCommands(IDiscordMessage e)
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual EventAccessibility GetUserAccessibility(IDiscordMessage e)
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual IEnumerable<ModuleInstance> GetModules()
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual Task<string> GetIdentifierAsync(ulong id)
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual Task SetIdentifierAsync(IDiscordGuild guild, string args)
+        {
+            throw new AddonRunException();
+        }
+
+        public virtual string GetBotVersion()
+        {
+            throw new AddonRunException();
+        }
+
+        List<IModule> IAddonInstance.GetModules()
+        {
+            throw new NotImplementedException();
         }
     }
 }

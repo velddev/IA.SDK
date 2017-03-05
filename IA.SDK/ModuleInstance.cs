@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IA.SDK.Events;
+using IA.SDK.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,42 +8,27 @@ namespace IA.SDK
 {
     public class ModuleInstance : IModule
     {
-        public ModuleData data = new ModuleData();
-
         public string Name { get; set; }
 
+        public bool Enabled { get; set; }
+
+        public MessageRecievedEventDelegate MessageRecieved { get; set; }
+        public UserUpdatedEventDelegate UserUpdated { get; set; }
+        public GuildUserEventDelegate UserJoinGuild { get; set; }
+        public GuildUserEventDelegate UserLeaveGuild { get; set; }
+
+        public List<ICommandEvent> Events { get; set; }
         private Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 
         public ModuleInstance(string name, bool enabled = true)
         {
-            data = new ModuleData()
-            {
-                name = name,
-                enabled = enabled
-            };
+            Name = name;
+            Enabled = enabled;
         }
 
-        public ModuleInstance(Action<ModuleData> info)
+        public ModuleInstance(Action<IModule> info)
         {
-            info.Invoke(data);
-        }
-
-        public Task AddCommand(Action<CommandEvent> x)
-        {
-            CommandEvent y = new CommandEvent(x);
-            data.events.Add(y);
-            return Task.CompletedTask;
-        }
-
-        // TODO: Finish this
-        public string GetState()
-        {
-            return data.name + ": " + "ACTIVE";
-        }
-
-        public Task Initialize()
-        {
-            return Task.CompletedTask;
+            info.Invoke(this);
         }
 
         public Task Install()
@@ -52,6 +39,21 @@ namespace IA.SDK
         public Task Uninstall()
         {
             return Task.CompletedTask;
+        }
+
+        public Task<bool> IsEnabled(ulong id)
+        {
+            throw new AddonRunException();
+        }
+
+        public Task InstallAsync(object bot)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UninstallAsync(object bot)
+        {
+            throw new NotImplementedException();
         }
     }
 }

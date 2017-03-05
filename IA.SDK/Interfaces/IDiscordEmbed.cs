@@ -4,7 +4,7 @@ namespace IA.SDK.Interfaces
 {
     public interface IDiscordEmbed
     {
-        IEmbedAuthor Author { get; }
+        IEmbedAuthor Author { get; set; }
 
         Color Color { get; set; }
 
@@ -20,6 +20,7 @@ namespace IA.SDK.Interfaces
 
         IDiscordEmbed AddField(Action<IEmbedField> field);
 
+        IEmbedAuthor CreateAuthor();
         void CreateFooter();
     }
 }

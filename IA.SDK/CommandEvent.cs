@@ -1,16 +1,20 @@
-﻿using System;
+﻿using IA.SDK.Events;
+using System;
+using System.Collections.Generic;
 
 namespace IA.SDK
 {
-    public class CommandEvent : EventInstance
+    public class CommandEvent : EventInstance, ICommandEvent
     {
-        public int cooldown = 1;
+        public int Cooldown { get; set; }
 
-        public DiscordGuildPermission[] requiresPermissions = new DiscordGuildPermission[0];
+        public List<DiscordGuildPermission> GuildPermissions { get; set; }
 
-        public CheckCommand checkCommand = null;
+        public CheckCommandDelegate CheckCommand { get; set; }
+        public ProcessCommandDelegate ProcessCommand { get; set; }
 
-        public ProcessCommand processCommand = null;
+        public CommandEvent()
+        { }
 
         public CommandEvent(Action<CommandEvent> info)
         {

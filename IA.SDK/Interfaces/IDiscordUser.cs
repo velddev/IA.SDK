@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace IA.SDK.Interfaces
@@ -14,6 +15,9 @@ namespace IA.SDK.Interfaces
         IDiscordAudioChannel VoiceChannel { get; }
 
         IDiscordGuild Guild { get; }
+        
+        DateTimeOffset CreatedAt { get; }
+        DateTimeOffset? JoinedAt { get; }
 
         List<ulong> RoleIds { get; }
 

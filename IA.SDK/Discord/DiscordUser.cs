@@ -15,6 +15,14 @@ namespace IA.SDK
             }
         }
 
+        public DateTimeOffset CreatedAt
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public virtual string Discriminator
         {
             get
@@ -44,6 +52,14 @@ namespace IA.SDK
             get
             {
                 return false;
+            }
+        }
+
+        public DateTimeOffset? JoinedAt
+        {
+            get
+            {
+                throw new NotImplementedException();
             }
         }
 
