@@ -7,12 +7,13 @@ There are a few steps you have to set up a SDK addon project.<br>
 2: Download the SDK and add it as a dependency<br>
 3: Add this snippet as your starting class.<br>
 ```csharp
-class Addon : BaseAddon {
-  public void Create(IAddonInstance addon) {
-    // create addon here.
-    return addon;
-  }
-}
+ public class Addon : IAddon
+ {
+    public Task<IAddonInstance> Create(IAddonInstance i)
+    {
+        throw new NotImplementedException();
+    }
+ }
 ```
 use the addon object to add commands and modules, it will be initialized on runtime.<br>
 
