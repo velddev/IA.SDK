@@ -19,7 +19,7 @@ namespace IA.SDK
 
         public void CreateModule(Action<IModule> x)
         {
-            Modules.Add(new ModuleInstance(x));
+            Modules.Add(new Module(x));
         }
 
         public virtual async Task QueryAsync(string text, QueryOutput output, params object[] parameters)
@@ -36,13 +36,17 @@ namespace IA.SDK
         {
             throw new AddonRunException();
         }
+        public virtual Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e)
+        {
+            throw new AddonRunException();
+        }
 
         public virtual EventAccessibility GetUserAccessibility(IDiscordMessage e)
         {
             throw new AddonRunException();
         }
 
-        public virtual IEnumerable<ModuleInstance> GetModules()
+        public virtual IEnumerable<Module> GetModules()
         {
             throw new AddonRunException();
         }

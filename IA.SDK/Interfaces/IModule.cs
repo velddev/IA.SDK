@@ -19,6 +19,8 @@ namespace IA.SDK
 
         Task<bool> IsEnabled(ulong id);
 
+        Task SetEnabled(ulong id, bool value);
+
         Task InstallAsync(object bot);
         Task UninstallAsync(object bot);
     }

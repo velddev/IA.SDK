@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IA.SDK.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,7 @@ namespace IA.SDK.Events
 
         CheckCommandDelegate CheckCommand { get; set; }
         ProcessCommandDelegate ProcessCommand { get; set; }
+
+        Task Check(IDiscordMessage e, string identifier = "");
     }
 }

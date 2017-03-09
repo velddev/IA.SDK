@@ -19,6 +19,8 @@ namespace IA.SDK
         Task<string> GetIdentifierAsync(ulong serverid);
         List<IModule> GetModules();
         EventAccessibility GetUserAccessibility(IDiscordMessage message);
+        Task<string> ListCommands(IDiscordMessage e);
+        Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e);
 
         Task SetIdentifierAsync(IDiscordGuild guild, string identifier);
 

@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Events
 {
-    public class EventInstance : IEvent
+    public class Event : IEvent
     {
         public string Name { get; set; } = "$command-not-named";
-        public string[] Aliases { get; set; }
+        public string[] Aliases { get; set; } = new string[0];
 
         public EventAccessibility Accessibility { get; set; } = EventAccessibility.PUBLIC;
         public EventMetadata Metadata { get; set; } = new EventMetadata();
@@ -21,16 +21,21 @@ namespace IA.SDK.Events
 
         public int TimesUsed { get; set; } = 0;
 
-        public EventInstance()
+        public Event()
         {
         }
 
-        public EventInstance(Action<EventInstance> info)
+        public Event(Action<Event> info)
         {
             info.Invoke(this);
         }
 
-        public virtual async Task<bool> IsEnabled(ulong id)
+        public async Task<bool> IsEnabled(ulong id)
+        {
+            throw new AddonRunException();
+        }
+
+        public Task SetEnabled(ulong id, bool value)
         {
             throw new AddonRunException();
         }
@@ -46,7 +51,6 @@ namespace IA.SDK.Events
         public EventMetadata()
         {
         }
-
         public EventMetadata(string description, string error, params string[] usage)
         {
             this.description = description;

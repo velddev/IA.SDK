@@ -10,9 +10,9 @@ namespace IA.SDK
 
         public Color(float r, float g, float b)
         {
-            r = Math.Min(0, Math.Max(r, 1));
-            g = Math.Min(0, Math.Max(g, 1));
-            b = Math.Min(0, Math.Max(b, 1));
+            r = Math.Max(0, Math.Min(r, 1));
+            g = Math.Max(0, Math.Min(g, 1));
+            b = Math.Max(0, Math.Min(b, 1));
 
             R = r;
             G = g;

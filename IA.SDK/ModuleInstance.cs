@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace IA.SDK
 {
-    public class ModuleInstance : IModule
+    public class Module : IModule
     {
         public string Name { get; set; }
 
-        public bool Enabled { get; set; }
+        public bool Enabled { get; set; } = true;
 
         public MessageRecievedEventDelegate MessageRecieved { get; set; }
         public UserUpdatedEventDelegate UserUpdated { get; set; }
@@ -20,13 +20,13 @@ namespace IA.SDK
         public List<ICommandEvent> Events { get; set; }
         private Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 
-        public ModuleInstance(string name, bool enabled = true)
+        public Module(string name, bool enabled = true)
         {
             Name = name;
             Enabled = enabled;
         }
 
-        public ModuleInstance(Action<IModule> info)
+        public Module(Action<IModule> info)
         {
             info.Invoke(this);
         }
@@ -52,6 +52,11 @@ namespace IA.SDK
         }
 
         public Task UninstallAsync(object bot)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SetEnabled(ulong id, bool value)
         {
             throw new NotImplementedException();
         }

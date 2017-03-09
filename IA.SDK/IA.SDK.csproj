@@ -43,7 +43,7 @@
     <Compile Include="AddonInstance.cs" />
     <Compile Include="BaseAddon.cs" />
     <Compile Include="Color.cs" />
-    <Compile Include="CommandEvent.cs" />
+    <Compile Include="Events\CommandEvent.cs" />
     <Compile Include="Database\SqlQueryResponse.cs" />
     <Compile Include="Discord\DiscordAudioClient.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />
@@ -74,8 +74,8 @@
     <Compile Include="Interfaces\IDiscordChannel.cs" />
     <Compile Include="Interfaces\IDiscordUser.cs" />
     <Compile Include="Interfaces\IDiscordMessage.cs" />
-    <Compile Include="EventInstance.cs" />
-    <Compile Include="EventInformation.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\EventInformation.cs" />
     <Compile Include="Discord\DiscordGuildPermission.cs" />
     <Compile Include="Interfaces\IProxy.cs" />
     <Compile Include="Interfaces\ISong.cs" />
