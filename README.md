@@ -9,9 +9,10 @@ There are a few steps you have to set up a SDK addon project.<br>
 ```csharp
  public class Addon : IAddon
  {
-    public Task<IAddonInstance> Create(IAddonInstance i)
+    public async Task<IAddonInstance> Create(IAddonInstance addon)
     {
-        throw new NotImplementedException();
+        // Do code and define 'addon'
+        return addon;    
     }
  }
 ```
