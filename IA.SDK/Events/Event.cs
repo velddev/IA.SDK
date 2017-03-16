@@ -41,9 +41,13 @@ namespace IA.SDK.Events
         }
     }
 
-    public class EventMetadata
+    public class Metadata
     {
-        public string description = "description not set for this command!";
+        public string description = "description not set for this object!";
+    }
+
+    public class EventMetadata : Metadata
+    {
         public string errorMessage = "Something went wrong!";
 
         public List<string> usage = new List<string>();
