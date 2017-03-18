@@ -10,7 +10,7 @@ namespace IA.SDK
     public class AddonInstance : IAddonInstance
     {
         public string Name { get; set; }
-        public List<IModule> Modules { get; set; }
+        public List<IModule> Modules { get; set; } = new List<IModule>();
 
         public AddonInstance()
         {

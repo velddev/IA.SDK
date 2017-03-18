@@ -30,6 +30,7 @@ namespace IA.SDK.Interfaces
 
         Task UnpinAsync();
 
+        // TODO: Move to AddonInstance
         IDiscordEmbed CreateEmbed();
     }
 }
