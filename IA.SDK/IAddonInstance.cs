@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace IA.SDK
 {
+    // TODO: restructure this
+    // TODO: stop adding TODO's and just do it
+    // TODO: Listen to my old TODO's
+
     public interface IAddonInstance
     {
         string Name { get; set; }

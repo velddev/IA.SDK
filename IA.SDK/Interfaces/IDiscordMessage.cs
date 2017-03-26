@@ -16,6 +16,8 @@ namespace IA.SDK.Interfaces
 
         IDiscordGuild Guild { get; }
 
+        Dictionary<DiscordEmoji, int> Reactions { get; }
+
         string Content { get; }
         DateTimeOffset Timestamp { get; }
 
