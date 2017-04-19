@@ -13,11 +13,13 @@ namespace IA.SDK.Interfaces
         IEmbedFooter Footer { get; set; }
 
         string ImageUrl { get; set; }
+        string ThumbnailUrl { get; set; }
 
         string Title { get; set; }
 
         string Url { get; set; }
 
+        IDiscordEmbed AddField(IEmbedField field);
         IDiscordEmbed AddField(Action<IEmbedField> field);
 
         IEmbedAuthor CreateAuthor();
