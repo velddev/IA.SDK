@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddonInstance.cs" />
+    <Compile Include="ArgumentField.cs" />
     <Compile Include="BaseAddon.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Events\CommandEvent.cs" />
@@ -55,7 +56,9 @@
     <Compile Include="Events\ICommandEvent.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Exceptions\AddonRunException.cs" />
+    <Compile Include="ExtensionString.cs" />
     <Compile Include="IAddonInstance.cs" />
+    <Compile Include="ICacheable.cs" />
     <Compile Include="Interfaces\IDiscordClient.cs" />
     <Compile Include="Interfaces\IDiscordAudioChannel.cs" />
     <Compile Include="Interfaces\IDiscordEmoji.cs" />
@@ -79,13 +82,16 @@
     <Compile Include="Events\EventInformation.cs" />
     <Compile Include="Discord\DiscordGuildPermission.cs" />
     <Compile Include="Interfaces\IProxy.cs" />
+    <Compile Include="Interfaces\IQuery.cs" />
     <Compile Include="Interfaces\ISong.cs" />
     <Compile Include="ModuleInstance.cs" />
     <Compile Include="ModuleData.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Extension Classes\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
