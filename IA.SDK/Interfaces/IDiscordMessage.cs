@@ -23,6 +23,7 @@ namespace IA.SDK.Interfaces
 
         IReadOnlyCollection<ulong> MentionedUserIds { get; }
         IReadOnlyCollection<ulong> MentionedRoleIds { get; }
+        IReadOnlyCollection<ulong> MentionedChannelIds { get; }
 
         Task DeleteAsync();
 

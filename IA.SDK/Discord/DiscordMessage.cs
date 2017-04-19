@@ -25,6 +25,8 @@ namespace IA.SDK
         IDiscordMessageChannel IDiscordMessage.Channel => throw new NotImplementedException();
         public Dictionary<DiscordEmoji, int> Reactions => throw new NotImplementedException();
 
+        public IReadOnlyCollection<ulong> MentionedChannelIds => throw new NotImplementedException();
+
         public virtual async Task DeleteAsync() => throw new NotImplementedException();
 
         public virtual async Task ModifyAsync(string message) => throw new NotImplementedException();
