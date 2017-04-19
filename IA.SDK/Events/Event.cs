@@ -1,4 +1,4 @@
-﻿using IA.SDK.Exceptions;
+﻿ using IA.SDK.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -24,7 +24,6 @@ namespace IA.SDK.Events
         public Event()
         {
         }
-
         public Event(Action<Event> info)
         {
             info.Invoke(this);
