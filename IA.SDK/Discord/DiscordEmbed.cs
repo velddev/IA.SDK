@@ -70,6 +70,19 @@ namespace IA.SDK
             }
         }
 
+        public string ThumbnailUrl
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public string Title
         {
             get
@@ -96,6 +109,10 @@ namespace IA.SDK
             }
         }
 
+        public IDiscordEmbed AddField(IEmbedField field)
+        {
+            throw new NotImplementedException();
+        }
         public IDiscordEmbed AddField(Action<IEmbedField> field)
         {
             throw new NotImplementedException();
