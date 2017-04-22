@@ -44,19 +44,19 @@
     <Compile Include="ArgumentField.cs" />
     <Compile Include="BaseAddon.cs" />
     <Compile Include="Color.cs" />
+    <Compile Include="Discord\DiscordEmbed.cs" />
     <Compile Include="Events\CommandEvent.cs" />
     <Compile Include="Database\SqlQueryResponse.cs" />
     <Compile Include="Discord\DiscordAudioClient.cs" />
     <Compile Include="Discord\DiscordChannel.cs" />
     <Compile Include="Discord\DiscordChannelPermission.cs" />
     <Compile Include="Discord\DiscordGuild.cs" />
-    <Compile Include="Discord\DiscordMessage.cs" />
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
     <Compile Include="Events\ICommandEvent.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Exceptions\AddonRunException.cs" />
-    <Compile Include="ExtensionString.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="IAddonInstance.cs" />
     <Compile Include="ICacheable.cs" />
     <Compile Include="Interfaces\IDiscordClient.cs" />
@@ -89,9 +89,7 @@
     <Compile Include="Option.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extension Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

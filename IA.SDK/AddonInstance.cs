@@ -70,5 +70,15 @@ namespace IA.SDK
         {
             throw new NotImplementedException();
         }
+
+        public int GetGuildCount()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ulong GetBotId()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
