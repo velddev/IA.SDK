@@ -16,16 +16,19 @@ namespace IA.SDK
         public UserUpdatedEventDelegate UserUpdated { get; set; }
         public GuildUserEventDelegate UserJoinGuild { get; set; }
         public GuildUserEventDelegate UserLeaveGuild { get; set; }
+        public GuildEventDelegate JoinedGuild { get; set; }
+        public GuildEventDelegate LeftGuild { get; set; }
 
         public List<ICommandEvent> Events { get; set; }
+
         private Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 
+        public Module() { }
         public Module(string name, bool enabled = true)
         {
             Name = name;
             Enabled = enabled;
         }
-
         public Module(Action<IModule> info)
         {
             info.Invoke(this);

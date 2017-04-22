@@ -14,6 +14,8 @@ namespace IA.SDK
         UserUpdatedEventDelegate UserUpdated { get; set; }
         GuildUserEventDelegate UserJoinGuild { get; set; }
         GuildUserEventDelegate UserLeaveGuild { get; set; }
+        GuildEventDelegate JoinedGuild { get; set; }
+        GuildEventDelegate LeftGuild { get; set; }
 
         List<ICommandEvent> Events { get; set; }
 
