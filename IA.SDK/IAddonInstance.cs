@@ -19,7 +19,7 @@ namespace IA.SDK
 
         ICommandEvent GetCommandEvent(string commandName);
 
-        ulong GetBotId();
+        ulong GetBotId(IDiscordGuild guild);
         string GetBotVersion();
 
         int GetGuildCount();

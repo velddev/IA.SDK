@@ -76,7 +76,7 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
-        public ulong GetBotId()
+        public ulong GetBotId(IDiscordGuild guild)
         {
             throw new NotImplementedException();
         }
