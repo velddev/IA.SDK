@@ -118,6 +118,11 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public string GetAvatarUrl(DiscordAvatarType type = DiscordAvatarType.PNG, ushort size = 128)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual bool HasPermissions(IDiscordChannel channel, params DiscordGuildPermission[] permissions)
         {
             throw new NotImplementedException();
@@ -154,6 +159,11 @@ namespace IA.SDK
         }
 
         public Task SetNickname(string text)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Unban(IDiscordGuild guild)
         {
             throw new NotImplementedException();
         }

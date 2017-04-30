@@ -34,6 +34,8 @@ namespace IA.SDK.Interfaces
 
         Task Kick();
 
+        string GetAvatarUrl(DiscordAvatarType type = DiscordAvatarType.PNG, ushort size = 128);
+
         Task RemoveRoleAsync(IDiscordRole role);
 
         Task RemoveRolesAsync(List<IDiscordRole> roles);
@@ -45,5 +47,12 @@ namespace IA.SDK.Interfaces
         Task<IDiscordMessage> SendMessage(IDiscordEmbed embed);
 
         Task SetNickname(string text);
+
+        Task Unban(IDiscordGuild guild);
     }
+
+    public enum DiscordAvatarType
+    {
+        PNG, GIF
+    };
 }
