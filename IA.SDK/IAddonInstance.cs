@@ -9,7 +9,6 @@ namespace IA.SDK
     // TODO: restructure this
     // TODO: stop adding TODO's and just do it
     // TODO: Listen to my old TODO's
-
     public interface IAddonInstance
     {
         string Name { get; set; }
@@ -31,7 +30,5 @@ namespace IA.SDK
         Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e);
 
         Task SetIdentifierAsync(IDiscordGuild guild, string identifier);
-
-        Task QueryAsync(string text, QueryOutput output, params object[] parameters);
     }
 }

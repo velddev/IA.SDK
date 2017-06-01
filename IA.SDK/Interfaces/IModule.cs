@@ -9,6 +9,7 @@ namespace IA.SDK
         string Name { get; set; }
 
         bool Enabled { get; set; }
+        bool CanBeDisabled { get; set; }
 
         MessageRecievedEventDelegate MessageRecieved { get; set; }
         UserUpdatedEventDelegate UserUpdated { get; set; }

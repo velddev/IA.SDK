@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Events
 {
+    // TODO: Find a way to remove this whole class.
     public class Event : IEvent
     {
         public string Name { get; set; } = "$command-not-named";
