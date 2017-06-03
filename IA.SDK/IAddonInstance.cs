@@ -29,6 +29,6 @@ namespace IA.SDK
         Task<string> ListCommands(IDiscordMessage e);
         Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e);
 
-        Task SetIdentifierAsync(IDiscordGuild guild, string identifier);
+        Task SetIdentifierAsync(IDiscordGuild guild, string defaultPrefix, string newPrefix);
     }
 }

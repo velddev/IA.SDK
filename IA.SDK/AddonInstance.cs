@@ -17,68 +17,18 @@ namespace IA.SDK
             Modules = new List<IModule>();
         }
 
-        public void CreateModule(Action<IModule> x)
-        {
-            Modules.Add(new Module(x));
-        }
-
-        public virtual async Task QueryAsync(string text, QueryOutput output, params object[] parameters)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual ICommandEvent GetCommandEvent(string args)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual Task<string> ListCommands(IDiscordMessage e)
-        {
-            throw new AddonRunException();
-        }
-        public virtual Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual EventAccessibility GetUserAccessibility(IDiscordMessage e)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual IEnumerable<Module> GetModules()
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual Task<string> GetIdentifierAsync(ulong id)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual Task SetIdentifierAsync(IDiscordGuild guild, string args)
-        {
-            throw new AddonRunException();
-        }
-
-        public virtual string GetBotVersion()
-        {
-            throw new AddonRunException();
-        }
-
-        List<IModule> IAddonInstance.GetModules()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int GetGuildCount()
-        {
-            throw new NotImplementedException();
-        }
-
-        public ulong GetBotId(IDiscordGuild guild)
-        {
-            throw new NotImplementedException();
-        }
+        public void CreateModule(Action<IModule> x) => throw new NotImplementedException();
+        public virtual async Task QueryAsync(string text, QueryOutput output, params object[] parameters) => throw new NotImplementedException();
+        public virtual ICommandEvent GetCommandEvent(string args) => throw new NotImplementedException();
+        public virtual Task<string> ListCommands(IDiscordMessage e) => throw new NotImplementedException();
+        public virtual Task<IDiscordEmbed> ListCommandsInEmbed(IDiscordMessage e) => throw new NotImplementedException();
+        public virtual EventAccessibility GetUserAccessibility(IDiscordMessage e) => throw new NotImplementedException();
+        public virtual IEnumerable<Module> GetModules() => throw new NotImplementedException();
+        public virtual Task<string> GetIdentifierAsync(ulong id) => throw new NotImplementedException();
+        public virtual Task SetIdentifierAsync(IDiscordGuild guild, string defaultPrefix, string newPrefix) => throw new NotImplementedException();
+        public virtual string GetBotVersion() => throw new NotImplementedException();
+        List<IModule> IAddonInstance.GetModules() => throw new NotImplementedException();
+        public int GetGuildCount() => throw new NotImplementedException();
+        public ulong GetBotId(IDiscordGuild guild) => throw new NotImplementedException();
     }
 }
