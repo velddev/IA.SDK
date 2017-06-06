@@ -118,12 +118,62 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public IDiscordEmbed AddField(string title, string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed AddInlineField(string title, string value)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEmbedAuthor CreateAuthor()
         {
             throw new NotImplementedException();
         }
 
         public void CreateFooter()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetAuthor(string name, string imageurl, string url)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetColor(Color color)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetDescription(string description)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetFooter(string text, string iconurl)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetImageUrl(string url)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetThumbnailUrl(string url)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetTitle(string title)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed SetUrl(string url)
         {
             throw new NotImplementedException();
         }
