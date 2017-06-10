@@ -21,6 +21,7 @@ namespace IA.SDK
         {
             await e.Channel.SendMessage("This command hasn't been set up correctly!");
         };
+        public Dictionary<string, ProcessCommandDelegate> CommandPool { get; set; } = new Dictionary<string, ProcessCommandDelegate>();
 
         public CommandEvent()
         { }
@@ -33,6 +34,41 @@ namespace IA.SDK
         public Task Check(IDiscordMessage e, string identifier = "")
         {
             throw new AddonRunException();
+        }
+
+        public ICommandEvent SetCooldown(int seconds)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICommandEvent SetPermissions(params DiscordGuildPermission[] permissions)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICommandEvent On(string args, ProcessCommandDelegate command)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICommandEvent Default(ProcessCommandDelegate command)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICommandEvent ICommandEvent.SetName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        ICommandEvent ICommandEvent.SetAccessibility(EventAccessibility accessibility)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICommandEvent SetAliases(params string[] aliases)
+        {
+            throw new NotImplementedException();
         }
     }
 }

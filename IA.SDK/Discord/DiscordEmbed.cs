@@ -1,5 +1,6 @@
 ﻿using IA.SDK.Interfaces;
 using System;
+using System.Threading.Tasks;
 
 namespace IA.SDK
 {
@@ -133,7 +134,27 @@ namespace IA.SDK
             throw new NotImplementedException();
         }
 
+        public IDiscordEmbed CreateAuthor(string text, string iconUrl, string url)
+        {
+            throw new NotImplementedException();
+        }
+
         public void CreateFooter()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDiscordEmbed CreateFooter(string text, string iconUrl)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IDiscordMessage> SendToChannel(ulong channelId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IDiscordMessage> SendToUser(ulong userId)
         {
             throw new NotImplementedException();
         }
@@ -174,6 +195,11 @@ namespace IA.SDK
         }
 
         public IDiscordEmbed SetUrl(string url)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEmbedFooter IDiscordEmbed.CreateFooter()
         {
             throw new NotImplementedException();
         }

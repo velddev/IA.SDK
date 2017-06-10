@@ -12,7 +12,6 @@ namespace IA.SDK.Events
         string[] Aliases { get; set; }
 
         EventAccessibility Accessibility { get; set; }
-        EventMetadata Metadata { get; set; }
 
         bool OverridableByDefaultPrefix { get; set; }
         bool CanBeDisabled { get; set; }
@@ -25,5 +24,9 @@ namespace IA.SDK.Events
         Task<bool> IsEnabled(ulong id);
 
         Task SetEnabled(ulong id, bool value);
+
+        IEvent SetName(string name);
+        IEvent SetAliases(params string[] aliases);
+        IEvent SetAccessibility(EventAccessibility accessibility);
     }
 }

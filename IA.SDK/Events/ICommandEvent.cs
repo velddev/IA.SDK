@@ -9,6 +9,7 @@ namespace IA.SDK.Events
 {
     public interface ICommandEvent : IEvent
     {
+        Dictionary<string, ProcessCommandDelegate> CommandPool { get; set; }
         int Cooldown { get; set; }
 
         List<DiscordGuildPermission> GuildPermissions { get; set; }
@@ -17,5 +18,13 @@ namespace IA.SDK.Events
         ProcessCommandDelegate ProcessCommand { get; set; }
 
         Task Check(IDiscordMessage e, string identifier = "");
+
+        new ICommandEvent SetName(string name);
+        new ICommandEvent SetAccessibility(EventAccessibility accessibility);
+        new ICommandEvent SetAliases(params string[] aliases);
+        ICommandEvent SetCooldown(int seconds);
+        ICommandEvent SetPermissions(params DiscordGuildPermission[] permissions);
+        ICommandEvent On(string args, ProcessCommandDelegate command);
+        ICommandEvent Default(ProcessCommandDelegate command);
     }
 }

@@ -39,6 +39,21 @@ namespace IA.SDK.Events
         {
             throw new AddonRunException();
         }
+
+        public IEvent SetName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEvent SetAccessibility(EventAccessibility accessibility)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEvent SetAliases(params string[] aliases)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Metadata

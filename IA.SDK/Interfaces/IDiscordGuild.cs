@@ -10,6 +10,7 @@ namespace IA.SDK.Interfaces
         string Name { get; }
 
         uint ChannelCount { get; }
+        uint VoiceChannelCount { get; }
         uint UserCount { get; }
 
         IDiscordUser Owner { get; }
