@@ -21,6 +21,7 @@ namespace IA.SDK
         public GuildEventDelegate LeftGuild { get; set; }
 
         public List<ICommandEvent> Events { get; set; }
+        public bool Nsfw { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         private Dictionary<ulong, bool> enabled = new Dictionary<ulong, bool>();
 

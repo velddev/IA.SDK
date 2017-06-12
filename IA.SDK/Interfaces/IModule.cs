@@ -10,6 +10,7 @@ namespace IA.SDK
 
         bool Enabled { get; set; }
         bool CanBeDisabled { get; set; }
+        bool Nsfw { get; set; }
 
         MessageRecievedEventDelegate MessageRecieved { get; set; }
         UserUpdatedEventDelegate UserUpdated { get; set; }

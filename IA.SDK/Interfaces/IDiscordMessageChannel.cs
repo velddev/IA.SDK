@@ -6,6 +6,8 @@ namespace IA.SDK.Interfaces
 {
     public interface IDiscordMessageChannel : IDiscordChannel
     {
+        bool Nsfw { get; }
+
         Task DeleteMessagesAsync(List<IDiscordMessage> messages);
 
         Task<List<IDiscordMessage>> GetMessagesAsync(int amount = 100);
