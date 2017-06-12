@@ -20,5 +20,7 @@ namespace IA.SDK.Interfaces
 
         Task<IDiscordMessage> SendMessage(string message);
         Task<IDiscordMessage> SendMessage(IDiscordEmbed embed);
+
+        Task SendTyping();
     }
 }
