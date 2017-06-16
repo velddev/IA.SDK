@@ -35,6 +35,14 @@ namespace IA.SDK
             
 }
         }
+
+        public static Color Lerp(Color colorA, Color ColorB, float time)
+        {
+            float newR = colorA.R + (ColorB.R - colorA.R) * time;
+            float newG = colorA.G + (ColorB.G - colorA.G) * time;
+            float newB = colorA.B + (ColorB.B - colorA.B) * time;
+            return new Color(newR, newG, newB);
+        }
     }
 
     public enum IAColor
