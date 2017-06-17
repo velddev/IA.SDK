@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Meru.SDK.Exceptions
+namespace Meru.SDK.Interfaces
 {
-    class AddonRunException : Exception
+    public interface IQuery<T>
     {
-
+        T Query(string query);
     }
 }

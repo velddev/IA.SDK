@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Meru.SDK.Exceptions
+namespace Meru.SDK
 {
-    class AddonRunException : Exception
+    public class DiscordReactionMetadata
     {
-
+        public bool IsMe;
+        public int ReactionCount;
     }
 }
