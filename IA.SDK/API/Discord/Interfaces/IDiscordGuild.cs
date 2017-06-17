@@ -4,10 +4,9 @@ using System.Threading.Tasks;
 
 namespace Meru.SDK.Interfaces
 {
-    public interface IDiscordGuild : IDiscordEntity
+    public interface IDiscordGuild : IMeruServer, IDiscordEntity
     {
         string AvatarUrl { get; }
-        string Name { get; }
 
         uint ChannelCount { get; }
         uint VoiceChannelCount { get; }

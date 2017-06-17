@@ -56,17 +56,17 @@ namespace Meru.SDK
             throw new NotImplementedException();
         }
 
+        new public ICommandEvent SetAliases(params string[] aliases)
+        {
+            throw new NotImplementedException();
+        }
+
         ICommandEvent ICommandEvent.SetName(string name)
         {
             throw new NotImplementedException();
         }
 
         ICommandEvent ICommandEvent.SetAccessibility(EventAccessibility accessibility)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICommandEvent SetAliases(params string[] aliases)
         {
             throw new NotImplementedException();
         }

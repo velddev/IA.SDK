@@ -8,5 +8,6 @@ namespace Meru.SDK
 {
     public interface IMeruServer
     {
+        string Name { get; }
     }
 }
