@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IA.SDK.Exceptions
+namespace IA.SDK
 {
-    class AddonRunException : Exception
+    public class DiscordReactionMetadata
     {
-
+        public bool IsMe;
+        public int ReactionCount;
     }
 }

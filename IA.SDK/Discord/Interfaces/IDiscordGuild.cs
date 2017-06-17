@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IA.SDK.Exceptions
+namespace IA.SDK.Interfaces
 {
-    class AddonRunException : Exception
+    interface IDiscordGuild : IDiscordEntity
     {
-
+    
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Meru
+namespace IA
 {
     public delegate void QueryOutput(SqlQueryResponse result);
 
