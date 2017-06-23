@@ -48,12 +48,14 @@ namespace IA.SDK
 
         public ICommandEvent On(string args, ProcessCommandDelegate command)
         {
-            throw new NotImplementedException();
+            CommandPool.Add(args, command);
+            return this;
         }
 
         public ICommandEvent Default(ProcessCommandDelegate command)
         {
-            throw new NotImplementedException();
+            ProcessCommand = command;
+            return this;
         }
 
         ICommandEvent ICommandEvent.SetName(string name)
