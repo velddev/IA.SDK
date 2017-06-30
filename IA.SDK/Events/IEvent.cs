@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IA.SDK.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,7 @@ namespace IA.SDK.Events
         Task<bool> IsEnabled(ulong id);
 
         Task SetEnabled(ulong id, bool value);
+        Task SetEnabledAll(IDiscordGuild guild, bool value);
 
         IEvent SetName(string name);
         IEvent SetAliases(params string[] aliases);
