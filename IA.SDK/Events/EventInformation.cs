@@ -1,4 +1,5 @@
-﻿using IA.SDK.Interfaces;
+﻿using IA.SDK.Events;
+using IA.SDK.Interfaces;
 using System.Threading.Tasks;
 
 namespace IA.SDK
@@ -17,9 +18,9 @@ namespace IA.SDK
         SERVER
     }
 
-    public delegate Task ProcessServerCommand(IDiscordGuild e);
+    public delegate Task ProcessServerCommand(IDiscordGuild guild);
 
-    public delegate Task ProcessCommandDelegate(IDiscordMessage e, string args);
+    public delegate Task ProcessCommandDelegate(EventContext context);
 
-    public delegate bool CheckCommandDelegate(IDiscordMessage e, string command, string[] allAliases);
+    public delegate bool CheckCommandDelegate(IDiscordMessage message, string command, string[] allAliases);
 }

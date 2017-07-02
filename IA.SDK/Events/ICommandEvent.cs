@@ -17,7 +17,7 @@ namespace IA.SDK.Events
         CheckCommandDelegate CheckCommand { get; set; }
         ProcessCommandDelegate ProcessCommand { get; set; }
 
-        Task Check(IDiscordMessage e, string identifier = "");
+        Task Check(IDiscordMessage e, ICommandHandler c, string identifier = "");
 
         new ICommandEvent SetName(string name);
         new ICommandEvent SetAccessibility(EventAccessibility accessibility);

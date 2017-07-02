@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IA.SDK.Builders
 {
-    class MessageBuilder
+    public class MessageBuilder
     {
         string message = "";
 
@@ -63,7 +63,7 @@ namespace IA.SDK.Builders
         }
     }
 
-    enum MessageFormatting
+    public enum MessageFormatting
     {
         PLAIN,
         BOLD,

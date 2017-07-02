@@ -17,9 +17,9 @@ namespace IA.SDK
         {
             return true;
         };
-        public ProcessCommandDelegate ProcessCommand { get; set; } = async (e, args) =>
+        public ProcessCommandDelegate ProcessCommand { get; set; } = async (context) =>
         {
-            await e.Channel.SendMessage("This command hasn't been set up correctly!");
+            await context.message.Channel.SendMessage("This command hasn't been set up correctly!");
         };
         public Dictionary<string, ProcessCommandDelegate> CommandPool { get; set; } = new Dictionary<string, ProcessCommandDelegate>();
 
@@ -69,6 +69,11 @@ namespace IA.SDK
         }
 
         public ICommandEvent SetAliases(params string[] aliases)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Check(IDiscordMessage e, ICommandHandler c, string identifier = "")
         {
             throw new NotImplementedException();
         }

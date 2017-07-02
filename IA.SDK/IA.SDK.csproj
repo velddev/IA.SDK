@@ -72,7 +72,9 @@
     <Compile Include="Discord\DiscordGuild.cs" />
     <Compile Include="Discord\DiscordUser.cs" />
     <Compile Include="Discord\DiscordRole.cs" />
+    <Compile Include="Events\EventContext.cs" />
     <Compile Include="Events\ICommandEvent.cs" />
+    <Compile Include="Events\ICommandHandler.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Exceptions\AddonRunException.cs" />
     <Compile Include="Extensions.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="Interfaces\IProxy.cs" />
     <Compile Include="Interfaces\IQuery.cs" />
     <Compile Include="Interfaces\ISong.cs" />
+    <Compile Include="Builders\MessageBuilder.cs" />
     <Compile Include="ModuleInstance.cs" />
     <Compile Include="ModuleData.cs" />
     <Compile Include="Option.cs" />

@@ -1,4 +1,5 @@
 ﻿ using IA.SDK.Exceptions;
+using IA.SDK.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -36,6 +37,10 @@ namespace IA.SDK.Events
         }
 
         public Task SetEnabled(ulong id, bool value)
+        {
+            throw new AddonRunException();
+        }
+        public Task SetEnabledAll(IDiscordGuild guild, bool value)
         {
             throw new AddonRunException();
         }
