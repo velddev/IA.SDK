@@ -19,6 +19,11 @@ namespace IA.SDK.Builders
             message += text;
             return this;
         }
+        public MessageBuilder NewLine()
+        {
+            message += "\n";
+            return this;
+        }
 
         public string Build()
         {
